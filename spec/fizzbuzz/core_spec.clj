@@ -9,4 +9,8 @@
 
   (it "returns 1 when 1"
     (should= "1"
-      (fizzbuzz 1))))
+      (fizzbuzz 1)))
+
+  (it "returns 2 when 2"
+    (should= "2"
+      (fizzbuzz 2))))
