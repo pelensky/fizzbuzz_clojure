@@ -1,7 +1,10 @@
 (ns fizzbuzz.core)
 
 (defn fizzbuzz [arg]
-  (if (= arg 3) "fizz" (str arg) ))
+  (cond
+    (= arg 5) "buzz"
+    (= arg 3) "fizz"
+    :else (str arg)))
 
 (defn -main
   [& args]
