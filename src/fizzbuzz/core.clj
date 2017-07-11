@@ -1,7 +1,7 @@
 (ns fizzbuzz.core)
 
 (defn fizzbuzz [arg]
-  (str arg))
+  (if (= arg 3) "fizz" (str arg) ))
 
 (defn -main
   [& args]
