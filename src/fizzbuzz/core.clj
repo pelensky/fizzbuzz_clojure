@@ -6,7 +6,7 @@
 (defn fizzbuzz [arg]
   (cond
     (= arg 0) "0"
-    (= arg 5) "buzz"
+    (divisible-by? 5 arg) "buzz"
     (divisible-by? 3 arg) "fizz"
     :else (str arg)))
 

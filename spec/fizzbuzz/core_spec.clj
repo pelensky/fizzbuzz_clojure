@@ -29,4 +29,8 @@
 
   (it "returns fizz when 6"
     (should= "fizz"
-      (fizzbuzz 6))))
+      (fizzbuzz 6)))
+
+  (it "returns buzz for 10"
+    (should= "buzz"
+      (fizzbuzz 10))))
