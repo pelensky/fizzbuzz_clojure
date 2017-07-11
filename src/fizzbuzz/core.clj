@@ -1,10 +1,15 @@
 (ns fizzbuzz.core)
 
+(defn divisible-by? [divisor number]
+  (zero? (mod number divisor)))
+
 (defn fizzbuzz [arg]
   (cond
+    (= arg 0) "0"
     (= arg 5) "buzz"
-    (= arg 3) "fizz"
+    (divisible-by? 3 arg) "fizz"
     :else (str arg)))
+
 
 (defn -main
   [& args]
